@@ -1,0 +1,99 @@
+[
+    {
+        "type": "input",
+        "name": "firsName",
+        "placeholder": "Enter your first name",
+        "label": "First Name",
+        "value": "",
+        "validations": [
+            {
+                "type": "required",
+                "message": "the first name is required"
+            },
+            {
+                "type": "minLength",
+                "message": "the first name must be at least 2 characters",
+                "length": 2
+            },
+            {
+                "type": "maxLength",
+                "message": "the first name must be less than 15 characters",
+                "length": 15
+            }
+        ]
+    },
+    {
+        "type": "input",
+        "name": "lastName",
+        "placeholder": "Enter your last name",
+        "label": "Last Name",
+        "value": "",
+        "validations": [
+            {
+                "type": "required",
+                "message": "the last name is required"
+            },
+            {
+                "type": "minLength",
+                "message": "the first name must be at least 2 characters",
+                "length": 2
+            },
+            {
+                "type": "maxLength",
+                "message": "the first name must be less than 15 characters",
+                "length": 15
+            }
+        ]
+    },
+    {
+        "type": "email",
+        "name": "email",
+        "placeholder": "Enter your email",
+        "label": "Email",
+        "value": "",
+        "validations": [
+            {
+            "type": "required",
+            "message": "the email is required"
+            },
+            {
+            "type": "email",
+            "message": "the email is not valid"
+            }
+        ]
+    },
+    {
+        "type": "select",
+        "name": "favoriteGame",
+        "label": "Favorite Game",
+        "value": "",
+        "validations": [
+            {
+            "type": "required",
+            "message": "Select a favorite game"
+            }
+        ],
+        "options": [
+            {
+                "id": 1,
+                "label": "Dota 2"
+            },
+            {
+                "id": 2,
+                "label": "League of Legends"
+            },
+            {
+                "id": 3,
+                "label": "CS:GO"
+            },
+            {
+                "id": 4,
+                "label": "Overwatch"
+            },
+            {
+                "id": 5,
+                "label": "Hearthstone"
+            }
+        ]
+    }
+]
